@@ -32,11 +32,13 @@ Durante o dojo construiremos um **Encurtador de URL simples**.
 A aplicação permitirá transformar links longos em links curtos que redirecionam para o endereço original.
 
 Exemplo:
-[https://meuapp.dev/a3k92](https://meuapp.dev/a3k92)
-→ redireciona para
-[https://www.exemplo.com/artigo-muito-longo-com-parametros?id=123](https://www.exemplo.com/artigo-muito-longo-com-parametros?id=123)
+
+https://meuapp.dev/a3k92  
+→ redireciona para  
+https://www.exemplo.com/artigo-muito-longo-com-parametros?id=123
 
 Funcionalidades:
+
 - criar URL encurtada
 - redirecionar para URL original
 - listar URLs criadas
@@ -49,38 +51,62 @@ O projeto foi escolhido porque é **simples, pequeno e fácil de compreender**, 
 # Tecnologias
 
 Backend
+
 - Node.js
 - Express
 
 Frontend
+
 - HTML5
 - JavaScript
 - Tailwind CSS
 
 Armazenamento
+
 - JSON local (arquivo simples)
+
 A intenção é **manter a stack o mais simples possível**, para focar no processo de desenvolvimento com IA.
 
 ---
 
 # Arquitetura
 
+```mermaid
+flowchart TD
+    A[Frontend] --> B[API Node.js]
+    B --> C[Armazenamento simples - JSON]
 ```
-Frontend (HTML + JS + Tailwind)
-↓
-API Node.js (Express)
-↓
-Armazenamento simples (JSON)
 
+---
+
+# Hospedagem
+
+A aplicação será publicada utilizando **Render**.
+
+O Render permite hospedar aplicações Node.js diretamente a partir de um repositório GitHub, com deploy automático e HTTPS configurado automaticamente.
+
+Fluxo de deploy:
+
+```mermaid
+flowchart TD
+  A[GitHub] --> B[Render]
+  B --> C[Aplicação publicada]
 ```
+
+Isso permitirá demonstrar no dojo:
+
+- deploy simples de aplicações web
+- integração com GitHub
+- atualização automática a cada commit
 
 ---
 
 # Estrutura do repositório
 
-```
+```plain
 ai-coding-dojo
-
+.github/workflow/deploy.yml
+.ai/
 backend/
 frontend/
 docs/
@@ -104,6 +130,7 @@ Prompts utilizados durante o treinamento.
 # Regras do Dojo
 
 Durante o treinamento seguiremos algumas regras:
+
 1. Nunca aceitar código gerado por IA sem compreender.
 2. Sempre revisar e validar o código gerado.
 3. Preferir soluções simples.
@@ -115,6 +142,7 @@ Durante o treinamento seguiremos algumas regras:
 # Resultado esperado
 
 Ao final do dojo os participantes deverão entender:
+
 - como usar IA para acelerar desenvolvimento
 - como manter qualidade de código mesmo utilizando IA
 - como revisar e melhorar código gerado
