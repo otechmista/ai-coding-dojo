@@ -203,7 +203,7 @@ nbdist/
 xcuserdata/
 
 # Zed
-.zed/workspace.json
+.zed/
 
 # ============================================
 # Operating Systems

@@ -33,8 +33,8 @@ A aplicação permitirá transformar links longos em links curtos que redirecion
 
 Exemplo:
 
-https://meuapp.dev/a3k92  
-→ redireciona para  
+https://meuapp.dev/a3k92
+→ redireciona para
 https://www.exemplo.com/artigo-muito-longo-com-parametros?id=123
 
 Funcionalidades:
@@ -113,16 +113,16 @@ docs/
 prompts/
 ```
 
-backend  
+backend
 API responsável por gerar URLs curtas e redirecionar para o destino.
 
-frontend  
+frontend
 Interface web simples para criar e visualizar URLs.
 
-docs  
+docs
 Material de apoio do dojo.
 
-prompts  
+prompts
 Prompts utilizados durante o treinamento.
 
 ---
