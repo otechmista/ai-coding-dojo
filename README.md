@@ -1,149 +1,264 @@
 # AI Coding Dojo
 
-Este repositório contém o material do **AI Coding Dojo**, um treinamento prático sobre **como utilizar Inteligência Artificial como assistente no desenvolvimento de software**.
+> Treinamento prático sobre desenvolvimento de software com assistência de IA
 
-O objetivo do dojo é demonstrar **como programar com apoio de IA mantendo controle técnico sobre o código**, evitando problemas comuns como:
+## 📋 Sobre o Dojo
 
-- código gerado sem entendimento
-- aumento de complexidade cognitiva
-- dependência excessiva de IA
-- perda de qualidade de software
-
-Durante o dojo será desenvolvido um projeto pequeno enquanto aprendemos **como solicitar código para IA, revisar o que foi gerado e refatorar quando necessário**.
+O **AI Coding Dojo** é um treinamento prático que ensina **como utilizar Inteligência Artificial como assistente no desenvolvimento de software**, mantendo o controle técnico e a qualidade do código.
 
 ---
 
-# Objetivo do Dojo
+## 🎯 Objetivo
 
-Ensinar na prática:
+Demonstrar **como programar com apoio de IA de forma eficaz**, evitando problemas comuns como:
 
-- como estruturar prompts para desenvolvimento
-- como dividir problemas em tarefas menores
-- como revisar código gerado por IA
-- como manter simplicidade no código
-- como usar IA como ferramenta e não como substituto do raciocínio técnico
+- ❌ Código gerado sem entendimento
+- ❌ Aumento de complexidade cognitiva
+- ❌ Dependência excessiva de IA
+- ❌ Perda de qualidade de software
+- ❌ Falta de controle sobre o código
 
----
+### O que você vai aprender
 
-# Projeto do Dojo
-
-Durante o dojo construiremos um **Encurtador de URL simples**.
-
-A aplicação permitirá transformar links longos em links curtos que redirecionam para o endereço original.
-
-Exemplo:
-
-https://meuapp.dev/a3k92
-→ redireciona para
-https://www.exemplo.com/artigo-muito-longo-com-parametros?id=123
-
-Funcionalidades:
-
-- criar URL encurtada
-- redirecionar para URL original
-- listar URLs criadas
-- contador de acessos
-
-O projeto foi escolhido porque é **simples, pequeno e fácil de compreender**, mas permite demonstrar várias práticas de desenvolvimento com IA.
+- ✅ Como estruturar prompts eficazes para desenvolvimento
+- ✅ Como dividir problemas complexos em tarefas menores
+- ✅ Como revisar e validar código gerado por IA
+- ✅ Como manter simplicidade no código
+- ✅ Como usar IA como ferramenta, não como substituto do raciocínio técnico
+- ✅ Como refatorar código gerado quando necessário
+- ✅ Como integrar IA ao fluxo real de desenvolvimento
 
 ---
 
-# Tecnologias
+## 🎓 Metodologia
 
-Backend
+O dojo segue uma metodologia prática e incremental:
 
-- Node.js
-- Express
+### 1. Demonstração
+- Apresentação de conceitos
+- Exemplos práticos
+- Boas práticas
 
-Frontend
+### 2. Prática Guiada
+- Desenvolvimento de funcionalidades com IA
+- Revisão colaborativa do código
+- Identificação de problemas
 
-- HTML5
-- JavaScript
-- Tailwind CSS
-
-Armazenamento
-
-- JSON local (arquivo simples)
-
-A intenção é **manter a stack o mais simples possível**, para focar no processo de desenvolvimento com IA.
+### 3. Reflexão
+- Análise das decisões tomadas
+- Discussão de alternativas
+- Lições aprendidas
 
 ---
 
-# Arquitetura
+## 📖 Princípios do Dojo
 
-```mermaid
-flowchart TD
-    A[Frontend] --> B[API Node.js]
-    B --> C[Armazenamento simples - JSON]
+Durante o treinamento seguimos 5 princípios fundamentais:
+
+### 1. Nunca aceitar código gerado sem compreender
+- Leia e entenda cada linha
+- Questione decisões de design
+- Valide a lógica implementada
+
+### 2. Sempre revisar e validar o código gerado
+- Teste o código
+- Verifique edge cases
+- Confirme que atende aos requisitos
+
+### 3. Preferir soluções simples
+- Menos código é melhor
+- Evite abstrações prematuras
+- Clareza sobre inteligência
+
+### 4. Evitar abstrações desnecessárias
+- Não adicione complexidade sem justificativa
+- YAGNI (You Aren't Gonna Need It)
+- Refatore apenas quando necessário
+
+### 5. Refatorar quando a complexidade aumentar
+- Mantenha o código limpo
+- Simplifique conforme aprende
+- Não aceite "dívida técnica" desnecessária
+
+---
+
+## 🛠️ Estrutura do Repositório
+
+```
+ai-coding-dojo/
+├── .ai/                    # Contexto para agentes de IA
+├── .github/                # Workflows e automações
+├── backend/                # Código do backend (quando aplicável)
+├── frontend/               # Código do frontend (quando aplicável)
+├── docs/                   # Documentação detalhada
+├── prompts/                # Exemplos de prompts utilizados
+└── README.md               # Este arquivo
 ```
 
----
+### 📁 Descrição das pastas
 
-# Hospedagem
+**`.ai/`** - Contexto operacional para agentes de IA que definem o comportamento esperado
 
-A aplicação será publicada utilizando **Render**.
+**`docs/`** - Material de apoio, documentação técnica e guias
 
-O Render permite hospedar aplicações Node.js diretamente a partir de um repositório GitHub, com deploy automático e HTTPS configurado automaticamente.
+**`prompts/`** - Exemplos de prompts utilizados durante o treinamento
 
-Fluxo de deploy:
-
-```mermaid
-flowchart TD
-  A[GitHub] --> B[Render]
-  B --> C[Aplicação publicada]
-```
-
-Isso permitirá demonstrar no dojo:
-
-- deploy simples de aplicações web
-- integração com GitHub
-- atualização automática a cada commit
+**`backend/` e `frontend/`** - Código do projeto desenvolvido durante o dojo
 
 ---
 
-# Estrutura do repositório
+## 🚀 Como Usar Este Repositório
 
-```plain
-ai-coding-dojo
-.github/workflow/deploy.yml
-.ai/
-backend/
-frontend/
-docs/
-prompts/
-```
+### Para Participantes do Dojo
 
-backend
-API responsável por gerar URLs curtas e redirecionar para o destino.
+1. Clone o repositório
+2. Siga as instruções do instrutor
+3. Consulte a documentação em `/docs` quando necessário
+4. Experimente os prompts em `/prompts`
+5. Desenvolva junto com o grupo
 
-frontend
-Interface web simples para criar e visualizar URLs.
+### Para Instrutores
 
-docs
-Material de apoio do dojo.
+1. Revise o material em `/docs`
+2. Adapte os exemplos ao contexto da turma
+3. Use os prompts de `/prompts` como referência
+4. Siga a metodologia proposta
+5. Incentive discussão e reflexão
 
-prompts
-Prompts utilizados durante o treinamento.
+### Para Estudo Individual
 
----
-
-# Regras do Dojo
-
-Durante o treinamento seguiremos algumas regras:
-
-1. Nunca aceitar código gerado por IA sem compreender.
-2. Sempre revisar e validar o código gerado.
-3. Preferir soluções simples.
-4. Evitar abstrações desnecessárias.
-5. Refatorar sempre que a complexidade aumentar.
+1. Leia a documentação completa
+2. Pratique com os prompts fornecidos
+3. Desenvolva o projeto do zero
+4. Compare seu código com o repositório
+5. Reflita sobre as decisões tomadas
 
 ---
 
-# Resultado esperado
+## 🎯 Projeto Prático
 
-Ao final do dojo os participantes deverão entender:
+Durante o dojo, desenvolvemos um projeto prático escolhido por ser:
 
-- como usar IA para acelerar desenvolvimento
-- como manter qualidade de código mesmo utilizando IA
-- como revisar e melhorar código gerado
-- como integrar IA ao fluxo real de desenvolvimento
+- ✅ **Simples** - fácil de compreender
+- ✅ **Pequeno** - pode ser completado em poucas horas
+- ✅ **Representativo** - demonstra conceitos reais de desenvolvimento
+- ✅ **Agnóstico** - pode ser implementado em qualquer stack
+
+O foco está no **processo**, não na tecnologia específica.
+
+### Critérios de Escolha do Projeto
+
+- Funcionalidades claras e bem definidas
+- Escopo limitado e controlado
+- Permite demonstrar diferentes aspectos do desenvolvimento com IA
+- Não requer conhecimento prévio de frameworks complexos
+- Pode ser desenvolvido de forma incremental
+
+---
+
+## 📚 Tópicos Abordados
+
+### Interação com IA
+
+- ✅ Estruturação de prompts eficazes
+- ✅ Contexto adequado para o agente
+- ✅ Iteração e refinamento
+- ✅ Decomposição de problemas
+
+### Qualidade de Código
+
+- ✅ Revisão crítica
+- ✅ Identificação de code smells
+- ✅ Refatoração incremental
+- ✅ Testes e validação
+
+### Arquitetura e Design
+
+- ✅ Simplicidade vs Complexidade
+- ✅ Separação de responsabilidades
+- ✅ Decisões de design
+- ✅ Trade-offs técnicos
+
+### Processo de Desenvolvimento
+
+- ✅ Planejamento incremental
+- ✅ Desenvolvimento iterativo
+- ✅ Documentação contínua
+- ✅ Deploy e manutenção
+
+---
+
+## 🎖️ Competências Desenvolvidas
+
+Ao final do dojo, você será capaz de:
+
+### Técnicas
+
+- Usar IA para acelerar desenvolvimento mantendo qualidade
+- Revisar e melhorar código gerado por IA
+- Identificar quando aceitar ou rejeitar sugestões da IA
+- Estruturar projetos de forma clara e manutenível
+
+### Estratégicas
+
+- Decompor problemas complexos em partes gerenciáveis
+- Tomar decisões técnicas fundamentadas
+- Balancear velocidade e qualidade
+- Integrar IA ao fluxo de trabalho real
+
+### Comportamentais
+
+- Manter pensamento crítico
+- Questionar suposições
+- Buscar simplicidade
+- Aprender continuamente
+
+---
+
+## 🤝 Contribuindo
+
+Este é um projeto educacional aberto a contribuições!
+
+### Como contribuir
+
+1. **Relate problemas** - Issues para bugs ou sugestões
+2. **Melhore a documentação** - PRs são bem-vindos
+3. **Compartilhe experiências** - Adicione exemplos de prompts
+4. **Adapte o conteúdo** - Fork e customize para seu contexto
+
+### Diretrizes
+
+- Mantenha o foco no processo, não em tecnologias específicas
+- Priorize clareza e simplicidade
+- Documente suas contribuições
+- Siga os princípios do dojo
+
+---
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](./LICENSE) para mais detalhes.
+
+---
+
+## 📧 Contato e Suporte
+
+- **Issues:** Use o GitHub Issues para dúvidas e sugestões
+- **Documentação:** Consulte a pasta `/docs` para informações detalhadas
+- **Discussões:** Use GitHub Discussions para trocar experiências
+
+---
+
+## 🌟 Princípio Fundamental
+
+> **A IA é uma ferramenta poderosa, mas o desenvolvedor sempre deve manter o controle técnico e a compreensão do código.**
+
+O objetivo não é escrever menos código, mas sim:
+- ✅ Escrever código melhor
+- ✅ Aprender mais rápido
+- ✅ Resolver problemas de forma mais eficaz
+- ✅ Manter qualidade e simplicidade
+
+---
+
+**Desenvolvido com 🤖 IA e 🧠 Pensamento Crítico**
