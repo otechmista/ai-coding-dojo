@@ -82,58 +82,36 @@ Durante o treinamento seguimos 5 princípios fundamentais:
 
 ---
 
-## 🛠️ Estrutura do Repositório
 
-```
-ai-coding-dojo/
-├── .ai/                    # Contexto para agentes de IA
-├── .github/                # Workflows e automações
-├── backend/                # Código do backend (quando aplicável)
-├── frontend/               # Código do frontend (quando aplicável)
-├── docs/                   # Documentação detalhada
-├── prompts/                # Exemplos de prompts utilizados
-└── README.md               # Este arquivo
-```
 
-### 📁 Descrição das pastas
+## 🚀 Como Participar
 
-**`.ai/`** - Contexto operacional para agentes de IA que definem o comportamento esperado
+### Durante o Dojo
 
-**`docs/`** - Material de apoio, documentação técnica e guias
-
-**`prompts/`** - Exemplos de prompts utilizados durante o treinamento
-
-**`backend/` e `frontend/`** - Código do projeto desenvolvido durante o dojo
-
----
-
-## 🚀 Como Usar Este Repositório
-
-### Para Participantes do Dojo
-
-1. Clone o repositório
-2. Siga as instruções do instrutor
-3. Consulte a documentação em `/docs` quando necessário
-4. Experimente os prompts em `/prompts`
-5. Desenvolva junto com o grupo
+1. Siga as instruções do instrutor
+2. Desenvolva junto com o grupo
+3. Questione e discuta decisões
+4. Experimente diferentes abordagens
+5. Reflita sobre o processo
 
 ### Para Instrutores
 
-1. Revise o material em `/docs`
-2. Adapte os exemplos ao contexto da turma
-3. Use os prompts de `/prompts` como referência
-4. Siga a metodologia proposta
-5. Incentive discussão e reflexão
+1. Adapte os exemplos ao contexto da turma
+2. Siga a metodologia proposta (Demonstração → Prática → Reflexão)
+3. Incentive discussão e pensamento crítico
+4. Foque no processo, não no resultado final
+5. Promova aprendizado colaborativo
 
 ### Para Estudo Individual
 
-1. Leia a documentação completa
-2. Pratique com os prompts fornecidos
-3. Desenvolva o projeto do zero
-4. Compare seu código com o repositório
-5. Reflita sobre as decisões tomadas
+1. Escolha um projeto simples para desenvolver
+2. Pratique estruturação de prompts
+3. Revise criticamente o código gerado
+4. Refatore quando necessário
+5. Documente suas reflexões e aprendizados
 
 ---
+
 
 ## 🎯 Projeto Prático
 
